@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased transition-colors duration-300 bg-white dark:bg-[#09090b];
+  }
+}
+
+/* Custom fade in items initial state */
+.animate-fade-in-up {
+  opacity: 0;
+}
